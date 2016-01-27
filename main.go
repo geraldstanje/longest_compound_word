@@ -4,6 +4,7 @@ import (
   "flag"
   "fmt"
   "os"
+  "time"
 )
 
 var flagFilename string
@@ -20,4 +21,16 @@ func main() {
     fmt.Printf("Usage: %s -f filename\n", os.Args[0])
     os.Exit(1)
   }
+
+  var start time.Time
+  if flagBenchmark {
+    start = time.Now()
+  }
+
+  if flagBenchmark {
+    elapsed := time.Since(start)
+    fmt.Println("Runtime:", elapsed.Nanoseconds()/1000000, "ms")
+  }
+
+  //fmt.Println("longest compound word:", result)
 }
