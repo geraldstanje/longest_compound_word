@@ -1,5 +1,5 @@
 #Overview
-This app finds the longest compound word from a sortest list of words.
+This app finds the longest compound-word in the list, which is also a concatenation of other sub-words that exist in the list.
 
 ##Set GOPATH
 Go the the top directory and set the GOPATH using:
@@ -16,7 +16,7 @@ Flags:<br>
 $ go run main.go -f words.list -b
 ```
 
-##Test
+##Test the App
 ```
 $ cd src/lcwsolver
 $ go test
