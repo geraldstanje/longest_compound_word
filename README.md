@@ -8,13 +8,13 @@ $ export GOPATH="$GOPATH":"$PWD"
 ```
 
 ##Build and Run the longest compound word solver App
+Flags:<br>
+  * -f filename
+  * -b enable benchmarking
+
 ```
 $ go run main.go -f words.list -b
 ```
-
-Flags:
--f filename
--b enable benchmarking
 
 ##Test the longest compound word solver App
 ```
